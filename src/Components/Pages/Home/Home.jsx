@@ -1,10 +1,14 @@
 import React from 'react';
+import Container from '../../SharePage/Container';
+import Search from './Search';
+import TopCollege from './TopCollege/TopCollege';
 
 const Home = () => {
     return (
-        <div>
-            <h3>this is home page</h3>
-        </div>
+     <div>
+        <Search></Search>
+        <TopCollege></TopCollege>
+     </div>
     );
 };
 

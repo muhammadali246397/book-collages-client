@@ -1,0 +1,70 @@
+[
+  {
+    "collegeImage": "http://www.northsouth.edu/newassets/images/slides/fullSlide-7.jpg",
+    "collegeName": "North South Univercity",
+    "admissionDates": "August 15, 2023",
+    "events": "College A hosts various events throughout the academic year, promoting cultural diversity and extracurricular engagement.",
+    "researchHistory": "Founded in 1905, College A has a rich research tradition, focusing on groundbreaking discoveries in science and technology.",
+    "sports": [
+      {
+        "category": "Football",
+        "description": "Football is one of the most popular sports at College A, with an enthusiastic team and regular intercollegiate competitions."
+      },
+      {
+        "category": "Basketball",
+        "description": "Basketball enthusiasts at College A have access to well-maintained courts and frequent tournaments to showcase their skills."
+      }
+    ]
+  },
+  {
+    "collegeImage": "http://www.northsouth.edu/newassets/images/slides/fullSlide-7.jpg",
+    "collegeName": "college b",
+    "admissionDates": "September 1, 2023",
+    "events": "College B takes pride in organizing a series of thought-provoking events, inviting influential speakers and fostering critical discussions.",
+    "researchHistory": "With a legacy dating back to the 19th century, College B has contributed significantly to the fields of arts, humanities, and social sciences.",
+    "sports": [
+      {
+        "category": "Cricket",
+        "description": "Cricket is more than just a sport at College B; it's a passion shared by students and faculty alike, with a dedicated cricket ground on campus."
+      },
+      {
+        "category": "Tennis",
+        "description": "Tennis enthusiasts at College B can enjoy playing on well-maintained courts and participate in exciting tournaments throughout the year."
+      }
+    ]
+  },
+  {
+    "collegeImage": "http://www.northsouth.edu/newassets/images/slides/fullSlide-7.jpg",
+    "collegeName": "College C",
+    "admissionDates": "July 20, 2023",
+    "events": "College C encourages students to actively participate in community service and hosts volunteering events regularly.",
+    "researchHistory": "Known for its innovative research in engineering and technology, College C has received several prestigious awards.",
+    "sports": [
+      {
+        "category": "Swimming",
+        "description": "College C offers excellent swimming facilities, allowing students to train and compete at both regional and national levels."
+      },
+      {
+        "category": "Athletics",
+        "description": "Athletics is an integral part of College C's sports program, with a track and field team consistently achieving commendable results."
+      }
+    ]
+  },
+  {
+    "collegeImage": "http://www.northsouth.edu/newassets/images/slides/fullSlide-7.jpg",
+    "collegeName": "College D",
+    "admissionDates": "October 5, 2023",
+    "events": "College D celebrates its diversity through cultural festivals, showcasing traditions from around the world.",
+    "researchHistory": "College D prides itself on its contributions to medical research, with groundbreaking discoveries in healthcare and life sciences.",
+    "sports": [
+      {
+        "category": "Volleyball",
+        "description": "Volleyball enthusiasts at College D can participate in friendly matches and competitive tournaments on the campus courts."
+      },
+      {
+        "category": "Badminton",
+        "description": "Badminton is a favorite recreational sport at College D, and students can play in the college gymnasium at any time."
+      }
+    ]
+  }
+]
