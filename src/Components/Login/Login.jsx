@@ -1,15 +1,15 @@
 
 import React, { useContext, useState } from 'react';
 import Container from '../SharePage/Container';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash, FaGoogle } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 
 const Login = () => {
-
+    const location = useLocation()
     const {logIn,googleSignin,resetpassword,user} = useContext(AuthContext)
-    console.log(user?.email)
+    const from = location.state?.from?.pathname || '/';
 
     const navigate = useNavigate();
     const [passwordVisible, setPasswordVisible] = useState(false);
@@ -23,7 +23,7 @@ const Login = () => {
             console.log(result.user)
             alert('login successfully')
             reset()
-            navigate('/')
+            navigate(from)
         })
         .catch(error => console.log(error.message))
     }
@@ -32,7 +32,7 @@ const Login = () => {
         googleSignin()
         .then(result => {
             alert('login successfully')
-            navigate('/')
+            navigate(from)
         })
         .catch(error => console.log(error))
     }

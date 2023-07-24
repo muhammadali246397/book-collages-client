@@ -11,6 +11,7 @@ import Colleges from "../Components/Pages/Colleges/Colleges";
 import Admission from "../Components/Pages/Admission/Admission";
 import MyCollege from "../Components/Pages/MyCollege/MyCollege";
 import AdmissionForm from "../Components/Pages/Admission/AdmissionForm";
+import PrivateRoute from "../Components/PrivateRoute/PrivateRoute";
 
 
   const Router = createBrowserRouter([
@@ -23,7 +24,7 @@ import AdmissionForm from "../Components/Pages/Admission/AdmissionForm";
       },
       {
         path:'details/:id',
-        element:<CollegeDetails></CollegeDetails>,
+        element:<PrivateRoute><CollegeDetails></CollegeDetails></PrivateRoute>,
         loader:({params}) => fetch(`https://book-college-server.vercel.app/collegeDetails/${params.id}`)
       },
       {
@@ -48,7 +49,7 @@ import AdmissionForm from "../Components/Pages/Admission/AdmissionForm";
       },
       {
         path:'/form',
-        element:<AdmissionForm></AdmissionForm>
+        element:<PrivateRoute><AdmissionForm></AdmissionForm></PrivateRoute>
       }
     ]
     },
