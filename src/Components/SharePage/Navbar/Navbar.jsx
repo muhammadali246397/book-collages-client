@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Container from '../Container';
 import { NavLink } from 'react-router-dom';
+import { AuthContext } from '../../AuthProvider/AuthProvider';
 
 const Navbar = () => {
+    const {user,logOut} = useContext(AuthContext);
+    const handlelogout = () => {
+        logOut();
+    }
+    
     const navItem = <>
-       <li className='mx-4 '><NavLink>Home</NavLink></li>
-       <li className='mx-4 '><NavLink>Collages</NavLink></li>
-       <li className='mx-4 '><NavLink>Admission</NavLink></li>
-       <li className='mx-4 '><NavLink>My Collage</NavLink></li>
+       <li className='mx-4 '><NavLink to='/'>Home</NavLink></li>
+       <li className='mx-4 '><NavLink to='/colleges'>Colleges</NavLink></li>
+       <li className='mx-4 '><NavLink to='/admission'>Admission</NavLink></li>
+       <li className='mx-4 '><NavLink to='/mycollege'>My College</NavLink></li>
+       
+       {
+        user?<>
+        <li className='mx-4 '><button onClick={handlelogout}>Logout</button></li>
+        <li></li>
+        </>:<>
+        <li className='mx-4 '><NavLink to='login'>Login</NavLink></li>
+        </>
+       }
     </>
     return (
         <div>
@@ -22,7 +37,7 @@ const Navbar = () => {
                                 {navItem}
                             </ul>
                         </div>
-                        <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                        <a className="btn btn-ghost normal-case text-xl">BOOKINGS</a>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1">
@@ -30,7 +45,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                        <a className="btn">Button</a>
+                        <a className="">{user?.email}</a>
                     </div>
                 </div>
             </Container>
